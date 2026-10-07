@@ -1,22 +1,14 @@
-import java.io.*;
-import java.util.*;
+import leetcode.Anagram;
+import leetcode.TwoSum;
 
 public class Main {
     public static void main(String[] args) {
-//        JavaArray javaArray=new JavaArray();
-//        javaArray.addValue(1);
-//        javaArray.addValue(2);
-//        javaArray.addValue(3);
-//        javaArray.addValue(4);
-//        javaArray.addValue(5);
-//        System.out.println("\nThe values are:");
-//        javaArray.displayArray();
-
-        JavaHash jh = new JavaHash();
-        jh.addValue(5);
-        jh.addValue(3);
-        jh.addValue(5); // duplicate, ignored
-        jh.addValue(10);
-        jh.displayHashSet();
+        int []nums = {4,5,6};
+        int target = 10;
+        TwoSum tS=new TwoSum();
+        int[] result=tS.twoSum(nums,target);
+        for (int i=0;i<result.length;i++){
+            System.out.println(result[i]);
+        }
     }
 }
