@@ -18,4 +18,25 @@ public class GroupAnagram {
         return new ArrayList<>(map.values());
     }
 
+
+    public void anotherMethod(){
+        String[] strs = {"act", "pots", "tops","cat","stop","hat"};
+        HashMap<String, List<String>> hashMap = new HashMap<>();
+        for (int i = 0; i < strs.length; i++) {
+            int[] alphabets = new int[26];
+            for(int j=0;j<strs[i].length();j++){
+                char temp=strs[i].charAt(j);
+                int value=temp-'a';
+                alphabets[value]++;
+            }
+            String key=Arrays.toString(alphabets);
+            if(!hashMap.containsKey(key)){
+                hashMap.put(key,new ArrayList<>());
+            }
+            hashMap.get(key).add(strs[i]);
+        }
+        ArrayList<List<String>> array= new ArrayList<>(hashMap.values());
+        System.out.println(array.toString());
+    }
+
 }
