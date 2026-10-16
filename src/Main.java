@@ -12,5 +12,7 @@ public class Main {
         FizzBuzz fizzBuzz=new FizzBuzz();
         List<String> list=fizzBuzz.fizzBuzz(15);
         fizzBuzz.displayList(list);
+        System.out.println("Hello");
+
     }
 }
