@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-
+        System.out.println("Hello");
         FizzBuzz fizzBuzz=new FizzBuzz();
         List<String> list=fizzBuzz.fizzBuzz(15);
         fizzBuzz.displayList(list);
